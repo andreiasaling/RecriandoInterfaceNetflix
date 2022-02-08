@@ -1,0 +1,133 @@
+:root{
+    --vermelho:#E50914;
+    --preto: #141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*os elementos se adaptam ao tamanho da caixa ao invés de 'esticar' a caixa*/
+}
+
+
+/*ELEMENTOS BASE*/
+body{
+    background:var(--preto);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-family: 'Arial',sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+
+/*FILME PRINCIPAL*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)100%), url('/img/capa-strange.jpg');
+    height: 50%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition:.3s ease all;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width:60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+footer{
+    background-color: #2b2b2b;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+}
+footer a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 20px;
+}
+
+footer nav a:hover{
+    color:#fff;
+}
+
+footer .rodape{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
